@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Haikal</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #0c0c0c;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background: linear-gradient(135deg, #90Afc5, #68829e);
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .main-content {
+            padding: 2rem 0;
+        }
+
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        .section h2 {
+            font-size: 2rem;
+            border-bottom: 2px solid #050505;
+            display: inline-block;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            color: #66A5AD;
+        }
+
+        .project-item {
+            background: #90Afc5;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .project-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .contact form {
+            background: #fff;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact input, .contact textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+
+        .contact button {
+            background: linear-gradient(135deg, #90Afc5, #68829e);
+            color: #fff;
+            border: none;
+            padding: 1rem;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .contact button:hover {
+            background:  linear-gradient(135deg, #90Afc5, #68829e);
+        }
+
+        footer {
+            background:  linear-gradient(135deg, #90Afc5, #68829e);;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 768px) {}
+            .container {
+                width: 90%;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .section h2 {
+                font-size: 1.5rem;
+            }
+            /* Lightbox Styles */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+        }
+
+        .lightbox-content {
+            background: #fff;
+            border-radius: 8px;
+            padding: 2rem;
+            max-width: 80%;
+            max-height: 80%;
+            overflow-y: auto;
+        }
+
+        .lightbox-content img {
+            max-width: 100%;
+            border-radius: 8px;
+            display: block;
+            margin-bottom: 1rem;
+        }
+
+        .lightbox-content h3 {
+            margin-bottom: 1rem;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            color: #fff;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+
+        .lightbox:target {
+            display: flex;
+        }
+
+        .lightbox:target .lightbox-content {
+            max-height: 80%;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="container">
+                <nav>
+                    <a href="#about">Tentang</a>
+                    <a href="#projects">Proyek</a>
+                    <a href="#skills">Keahlian</a>
+                    <a href="#contact">Kontak</a>
+                </nav>
+            <h1>Haikal</h1>
+            <p>Deskripsi Singkat tentang Haikal</p>
+        </div>
+    </header>
+    
+    <div class="container main-content">
+        <section class="section about">
+            <h2>Tentang Saya</h2>
+            <p>Saya Muhammad Haikal Rasyaputra dari X-PPLG2.</p>
+        </section>
+        
+        <section class="section projects">
+            <h2>Proyek Saya</h2>
+            <div class="project-item">
+                <h3>Prospek kerja yang saya inginkan adalah front end</h3>
+                <p>Secara garis besar Front end adalah salah satu bagian dari website yang menampilkan tampilan pada para pengguna.</p> 
+            </div>
+            <div class="project-item"
+            >
+                <h3>projek yang sudah saya buat</h3>
+                 <a href="https://zidandev.github.io/haikal-porto"target="_blank">Web saya</a>.
+            </div>
+        </section>
+        
+        <section class="section skills">
+            <h2>Keahlian</h2>
+            <ul>
+                <li>Kemampuan IT yang kuat</li>
+                <li>Bahasa Pemrograman HTML/CSS
+                </li>
+                <li>Java Script</li>
+                <li>Skill teknologi</li>
+            </ul>
+        </section>
+        
+        <section class="section contact">
+            <h2>Kontak Saya</h2>
+            <form action="mailtto:haikalrasyaputra@gmail.com.com" method="post" enctype="text/plain">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Haikal Kelompok 2. X-PPLG 2.</p>
+        <a href="https://open.spotify.com/user/312jisik37f436ektgdc2gouyf5q?si=5acdb65e95cf4402"target="_blank">Spotify</a>.
+    </footer>
+</body>
+</html>
